@@ -1,0 +1,4 @@
+cd /home/<%= @app_name %>/<%= @app_name %>
+bundle install --local --path .local
+bundle exec rails db:migrate
+<%= @command_name %>

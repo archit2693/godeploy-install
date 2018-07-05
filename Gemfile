@@ -1,0 +1,7 @@
+source 'https://rubygems.org'
+gem 'chef-dk'
+gem 'knife-solo'
+gem 'berkshelf'
+gem 'inspec'
+gem 'ffi'
+gem 'ffi-yajl'

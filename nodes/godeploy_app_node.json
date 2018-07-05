@@ -1,0 +1,3 @@
+{
+  "run_list": ["recipe[godeploy-cookbook::install]"]
+}
