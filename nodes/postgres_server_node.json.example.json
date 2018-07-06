@@ -1,0 +1,9 @@
+{
+  "run_list": [ "recipe[godeploy-cookbook::postgres_server]"],
+  "database_root_password": "password",
+  "postgres_server_version": "10.5",
+  "app_db_user": "deploy",
+  "app_db_password": "password",
+  "app_db_name": "dbname",
+  "db_user_address": "localhost"
+}
