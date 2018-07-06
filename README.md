@@ -1,5 +1,6 @@
 # godeploy-install
  This is a chef-solo project which bootstraps the godeploy application and postgres server on nodes.
+ 
  For the deployment of ritik02/Deploy application it uses archit2693/deploy-cookbook.
 
  	Steps:
