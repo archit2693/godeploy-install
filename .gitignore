@@ -3,3 +3,4 @@
 /cookbooks
 /nodes/godeploy_app_node.json
 /nodes/postgres_server_node.json
+/chef-solo
