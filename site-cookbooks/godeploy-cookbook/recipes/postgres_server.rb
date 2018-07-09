@@ -4,9 +4,18 @@ app_db_user = node['app_db_user']
 app_db_password = node['app_db_password']
 app_db_name = node['app_db_name']
 db_user_address = node['db_user_address']
+listen_address = node['listen_address']
+
+config_hash = {
+ listen_addresses: listen_address
+}
 
 postgresql_server_install 'install Postgresql Server' do
-  action :install
+ action :install
+end
+
+postgresql_server_conf 'postgres_server_conf' do
+ additional_config  config_hash
 end
 
 postgresql_server_install 'Setup postgresql server' do

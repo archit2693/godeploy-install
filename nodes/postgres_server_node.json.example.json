@@ -5,5 +5,6 @@
   "app_db_user": "deploy",
   "app_db_password": "password",
   "app_db_name": "dbname",
-  "db_user_address": "localhost"
+  "db_user_address": "localhost",
+  "listen_address": "localhost"
 }

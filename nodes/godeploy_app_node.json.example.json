@@ -1,8 +1,8 @@
 {
   "run_list": ["recipe[godeploy-cookbook::install]"],
-  	"app_name": "deploy",
-	  "command_name": "bundle exec rails server -e production",
-	  "script_location": "/home/deploy/deploy_start.sh",
+  	"app_name": "godeploy",
+	  "command_name": "bundle exec rails server -e production -b localhost",
+	  "script_location": "/home/godeploy/deploy_start.sh",
     "environment_variables": {
     		"DB_NAME": "godeploy",
     		"RAILS_ENV": "production",
@@ -26,6 +26,7 @@
 			  "JIRA_BASE_URL": "https://example.atlassian.net/",
 			  "JIRA_PROJECT_KEY": "DEMO",
 			  "JIRA_ISSUE_TYPE": "Task",
-			  "SLACK_WEBHOOK": "https://hooks.slack.com/services/hash/hash/key"
+			  "SLACK_WEBHOOK": "https://hooks.slack.com/services/hash/hash/key",
+			  "GROUP_NOTIFICATION_MAIL": "example-group@mail.com"
 			}
 }
