@@ -1,7 +1,6 @@
 app_name = node['app_name']
 release_file = Github.new('ritik02/Deploy').get_release_file
 release_name = Github.new('ritik02/Deploy').get_release_name
-extracted_folder_name = "Deploy"
 script_location = node['script_location']
 command_name = node['command_name']
 
@@ -48,7 +47,7 @@ tar_extract release_file  do
 end
 
 link "/home/#{app_name}/#{app_name}"  do
-  to "/home/#{app_name}/#{release_name}/#{extracted_folder_name}"
+  to "/home/#{app_name}/#{release_name}/#{app_name}"
   action :create
   user app_name
   group app_name
