@@ -47,7 +47,7 @@ tar_extract release_file  do
 end
 
 link "/home/#{app_name}/#{app_name}"  do
-  to "/home/#{app_name}/#{release_name}/#{app_name}"
+  to "/home/#{app_name}/#{release_name}"
   action :create
   user app_name
   group app_name
