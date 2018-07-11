@@ -2,7 +2,8 @@ app_name = node['app_name']
 release_file = Github.new('ritik02/Deploy').get_release_file
 release_name = Github.new('ritik02/Deploy').get_release_name
 script_location = node['script_location']
-machine_ip = Socket.ip_address_list.detect{|intf| intf.ipv4_private?}.ip_address
+machine_ip = node['ipaddress']
+puts machine_ip
 command_name = node['command_name'] + " -b #{machine_ip}"
 
 apt_repository 'brightbox-ruby' do
